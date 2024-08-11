@@ -307,7 +307,7 @@
 
 <script>
 import { useExchangePostStore } from "@/store/useExchangePostStore";
-import { useRoute } from 'vue-router';
+// import { useRoute } from 'vue-router';
 import { mapStores } from 'pinia';
 import { useChatRoomStore } from "@/store/useChatRoomStore";
 import { useMemberStore } from "@/store/useMemberStore";
@@ -315,24 +315,24 @@ import { useMemberStore } from "@/store/useMemberStore";
 export default {
     name: 'ExPostReadPase',
     data() {
-        const route = useRoute();
+        // const route = useRoute();
         return { 
             message: "test",
-            postIdx: route.params.postIdx,
+            postIdx: this.$route.params.postIdx,
             post : {
-                postIdx: { type: Number, required : true },
-                postType: { type: String,required : true },
-                status: { type: Boolean, required : true },
-                memberIdx: { type: Number, required : true },
-                memberNickname: { type: String,required : true },
-                timeStamp: { type: String,required : true },
-                modifyTime: { type: String,required : true },
-                title:{ type: String,required : true },
-                contents: { type: String,required : true },
-                giveCategory: { type: Number, required : true },
-                giveBtmCategory: { type: String,required : true },
-                takeCategory: { type: Number, required : true },
-                takeBtmCategory: { type: Boolean, required : true },
+                // postIdx: { type: Number, required : true },
+                // postType: { type: String,required : true },
+                // status: { type: Boolean, required : true },
+                // memberIdx: { type: Number, required : true },
+                // memberNickname: { type: String,required : true },
+                // timeStamp: { type: String,required : true },
+                // modifyTime: { type: String,required : true },
+                // title:{ type: String,required : true },
+                // contents: { type: String,required : true },
+                // giveCategory: { type: Number, required : true },
+                // giveBtmCategory: { type: String,required : true },
+                // takeCategory: { type: Number, required : true },
+                // takeBtmCategory: { type: Boolean, required : true },
             }
         }
     },

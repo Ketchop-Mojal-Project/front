@@ -63,7 +63,7 @@ export const useExchangePostStore = defineStore("exchangePost", {
 
         // 선택한 나눔글,교환글 카테고리만 픽미픽미해서 가져오기
         async getExchangePostByCategory(selectedCategoryIdx) {
-            let url = `http://localhost:8080/search/category?idx=${selectedCategoryIdx}`;
+            let url = `/proxy/search/category?idx=${selectedCategoryIdx}`;
             this.selectedCategoryIdx = selectedCategoryIdx;
             let response = await axios.get(url); //응답 받아서 저장
             this.exchangeListAll = response.data.result.exchangePosts;

@@ -106,11 +106,11 @@
       >
         해당 카테고리 글이 존재하지 않습니다
       </div>
-      <a href="/myPostExchange.html">
-        <p style="text-align: center; cursor: pointer">
-          <span>더보기 ></span>
-        </p>
-      </a>
+      <div>
+          <p v-if="this.sharePostStore.hasMore" style="text-align: center; cursor: pointer">
+            <span @click="loadData">더보기 ></span>
+          </p>
+      </div>
     </ul>
 
     <div data-v-68994f89="" data-v-fbeed1e4="">
@@ -151,16 +151,17 @@ export default {
     this.itemidx = this.$route.params.id;
   },
   mounted() {
-    this.getData();
+    this.loadData();
   },
   methods: {
     toggle() {
       this.active = !this.active;
     },
-    async getData() {
-      await this.sharePostStore.getShareListAll();
-      console.log("와라와라ㅏㅏㅏㅏㅏ");
-      console.log(this.sharePostStore.shareListAll);
+    async loadData() {
+      await this.sharePostStore.getShareListAll(
+        this.sharePostStore.currentPage,
+        this.sharePostStore.pageSize
+      );
     },
     async getSharePostDetail() {
       await this.sharePostStore.getSharePost(this.itemidx);
