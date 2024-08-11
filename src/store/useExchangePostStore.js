@@ -8,6 +8,10 @@ export const useExchangePostStore = defineStore("exchangePost", {
             selectedIdx: null,
             exchangeListAll: [],
 
+            currentPage: 0,   // 현재 페이지 번호
+            pageSize: 10,     // 페이지당 아이템 수
+            hasMore: true,    // 더 불러올 수 있는지 여부
+
             exchangePost: [],
             postIdx: 0,
         }
@@ -35,15 +39,24 @@ export const useExchangePostStore = defineStore("exchangePost", {
 
 
         // 교환글전체리스트
-        async getExchangeListAll() {
-            try {
-                let url = `http://localhost:8080/exchange/list`;
-                let response = await axios.get(url);
-                this.exchangeListAll = response.data.result;
-                // console.log("리스트:", this.exchangeListAll);
-                // console.log("응답왔다");
-            } catch (error) {
-                console.log(error);
+        async getExchangeListAll(page, size) {
+            if(this.hasMore){
+                try {
+                    let url = `/proxy/exchange/list?page=${page}&size=${size}`;
+                    let response = await axios.get(url);
+
+                    // 불러온 데이터가 size보다 적다면 더 이상 불러올 데이터가 없다고 판단
+                    if (response.data.result.length < size) {
+                        this.hasMore = false;
+                    }
+
+                    // this.exchangeListAll = response.data.result; 
+                    this.exchangeListAll = [...this.exchangeListAll, ...response.data.result];
+
+                    this.currentPage++;
+                } catch (error) {
+                    console.log(error);
+                }
             }
         },
 
