@@ -152,7 +152,7 @@ ketchop팀에서는 서비스의 연속성이 있고 데이터 유실이 거의 
 
 
 # 👍기능테스트
-[시연영상](https://github.com/Ketchop-Mojal-Project/front/wiki/%EA%B8%B0%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8)
+[시연영상](https://youtu.be/rzBV5B_kKbU)
 <br><br>
 <br><br><br>
 
