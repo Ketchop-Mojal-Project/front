@@ -152,7 +152,7 @@ ketchop팀에서는 서비스의 연속성이 있고 데이터 유실이 거의 
 
 
 # 👍기능테스트
-[기능테스트](https://github.com/Ketchop-Mojal-Project/front/wiki/%EA%B8%B0%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8)
+[시연영상](https://github.com/Ketchop-Mojal-Project/front/wiki/%EA%B8%B0%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8)
 <br><br>
 <br><br><br>
 
@@ -162,15 +162,15 @@ ketchop팀에서는 서비스의 연속성이 있고 데이터 유실이 거의 
 
 
 # 🐳시스템 아키텍처
-<a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90">시스템 아키텍쳐</a>
+<a href="https://github.com/Ketchop-Mojal-Project/front/wiki/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90">시스템 아키텍쳐</a>
 <br><br><br>
 
 # 🔍주요기술
-<a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8">시연영상</a>
+<a href="https://github.com/Ketchop-Mojal-Project/front/wiki/%EC%A3%BC%EC%9A%94%EA%B8%B0%EC%88%A0">주요기술</a>
 <br><br><br>
 
 # ✔️코드 컨벤션
-<a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%BD%94%EB%93%9C%EC%BB%A8%EB%B2%A4%EC%85%98">코드 컨벤션</a>
+<a href="https://github.com/Ketchop-Mojal-Project/front/wiki/%EC%BD%94%EB%93%9C%EC%BB%A8%EB%B2%A4%EC%85%98">코드 컨벤션</a>
 <br><br><br>
 
 <!-- 
