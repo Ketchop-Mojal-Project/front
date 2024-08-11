@@ -157,7 +157,7 @@ ketchop팀에서는 서비스의 연속성이 있고 데이터 유실이 거의 
 <br><br><br>
 
 # 화면 설계서
-<a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%BD%94%EB%93%9C%EC%BB%A8%EB%B2%A4%EC%85%98">[Figma]화면설계서</a>
+<a href="https://www.figma.com/design/peBClrXDY5PRJ8ZsMpO7cj/idation?node-id=0-1">[Figma]화면설계서</a>
 <br><br><br>
 
 
