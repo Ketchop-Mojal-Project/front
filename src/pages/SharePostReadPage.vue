@@ -174,7 +174,7 @@
                         @click="routeToShare"
                         style="
                           border: 1px solid #116ed5;
-                          background-color: #116ed5;
+                          background: linear-gradient(65deg, #b69ce5, #0066d5);
                           color: #fff;
                           border-radius: 10px;
                           padding: 5px 10px;

@@ -11,19 +11,32 @@ export const useSharePostStore = defineStore("sharePost", {
             sharePost: {},
             shareDetail: {},
 
+            currentPage: 0,   // 현재 페이지 번호
+            pageSize: 10,     // 페이지당 아이템 수
+            hasMore: true,    // 더 불러올 수 있는지 여부
+
         }
     ),
     actions: {
         // 나눔글전체리스트
-        async getShareListAll() {
-            try {
-                let url = `http://localhost:8080/share/list`;
-                let response = await axios.get(url);
-                this.shareListAll = response.data.result;
-                console.log("나눔글전체리스트:", this.shareListAll);
-                console.log("응답왔다");
-            } catch (error) {
-                console.log(error);
+        async getShareListAll(page, size) {
+            if(this.hasMore){
+                try {
+                    let url = `http://localhost:8080/share/list?page=${page}&size=${size}`;
+                    let response = await axios.get(url);
+
+                    if (response.data.result.length < size) {
+                        this.hasMore = false;
+                    }
+
+                    this.shareListAll = [...this.shareListAll, ...response.data.result];
+                    this.currentPage++;
+
+                    console.log("나눔글전체리스트:", this.shareListAll);
+                    console.log("응답왔다");
+                } catch (error) {
+                    console.log(error);
+                }
             }
         },
         //해당idx나눔글
