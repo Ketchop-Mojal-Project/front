@@ -2,7 +2,7 @@
 <br><br>
 
 <div align=center>
-<img src="assets/image/mojalLogo.png" alt="모잘로고" width="30%">
+<img src="src/assets/mojalLogo.png" alt="모잘로고" width="30%">
 	<h3>"너 뭐 잘해?"</h3>
 	<h4>
  		우리의 mojal 서비스에서는 각자의 재능을 교환하거나 나눔으로써 공유의 장을 생성할 수 있고, <br>
