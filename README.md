@@ -152,7 +152,7 @@ ketchop팀에서는 서비스의 연속성이 있고 데이터 유실이 거의 
 
 
 # 👍기능테스트
-<!-- [직접 테스트해보기 -> Swagger-ui](http://43.203.218.195:8080/swagger-ui/index.html) -->
+[기능테스트](https://github.com/Ketchop-Mojal-Project/front/wiki/%EA%B8%B0%EB%8A%A5%ED%85%8C%EC%8A%A4%ED%8A%B8)
 <br><br>
 <br><br><br>
 
