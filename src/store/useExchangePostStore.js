@@ -21,14 +21,16 @@ export const useExchangePostStore = defineStore("exchangePost", {
         // 상세글 조회
         async getExchangeRead(postIdx) {
             try {
-                // console.log("in");
+                console.log("in");
                 
                 this.postIdx = postIdx;
 
-                // let url = `/proxy/exchange/read?idx=${this.postIdx}`;
-                let url = `http://localhost:8080/exchange/read?idx=${this.postIdx}`;
+                let url = `/proxy/exchange/read?idx=${this.postIdx}`;
+                // let url = `http://localhost:8080/exchange/read?idx=${this.postIdx}`;
                 const response = await axios.get(url);
 
+                console.log(response);
+                
                 this.exchangePost = response.data.result;
                 // console.log(response.data.result);
 

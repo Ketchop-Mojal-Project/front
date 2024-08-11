@@ -318,21 +318,21 @@ export default {
         // const route = useRoute();
         return { 
             message: "test",
-            postIdx: this.$route.params.postIdx,
+            postIdx: this.$route.params.id,
             post : {
-                // postIdx: { type: Number, required : true },
-                // postType: { type: String,required : true },
-                // status: { type: Boolean, required : true },
-                // memberIdx: { type: Number, required : true },
-                // memberNickname: { type: String,required : true },
-                // timeStamp: { type: String,required : true },
-                // modifyTime: { type: String,required : true },
-                // title:{ type: String,required : true },
-                // contents: { type: String,required : true },
-                // giveCategory: { type: Number, required : true },
-                // giveBtmCategory: { type: String,required : true },
-                // takeCategory: { type: Number, required : true },
-                // takeBtmCategory: { type: Boolean, required : true },
+                postIdx: 0,
+                postType: "",
+                status: "",
+                memberIdx: 0,
+                memberNickname: "",
+                timeStamp: "",
+                modifyTime: "",
+                title: "",
+                contents: "",
+                giveCategory: 0,
+                giveBtmCategory: "",
+                takeCategory: 0,
+                takeBtmCategory: "",
             }
         }
     },
@@ -344,7 +344,6 @@ export default {
     },
     methods: {
         async getPostInfo(postIdx) {
-            // console.log(postIdx);
             
             await this.exchangePostStore.getExchangeRead(postIdx);
             this.post = this.exchangePostStore.exchangePost;
@@ -375,7 +374,11 @@ export default {
                 // 채팅방 생성 후 채팅방으로 이동
                 // const router = useRouter(); // router 추가
                 alert(`채팅방이 생성되었습니다!`);
-                this.$router.push({ name: '/chat-room', params: { roomIdx: parseInt(chatRoomStore.roomIdx) } });
+                
+                // 2초 후에 라우터 이동
+                setTimeout(() => {
+                    this.$router.push({ name: 'chat-room', params: { roomIdx: parseInt(chatRoomStore.roomIdx) } });
+                }, 1000); // 2000 밀리초 = 2초
             }
 
         }

@@ -21,11 +21,11 @@
         class="topic-name legacy-typography interface-description gray-500 text-align-left"
       >
         <!-- eslint-disable -->
-        <span>{{ item.giveCategory }}</span>
+        <span>{{ item.giveCategory }} > </span>
         <span></span>
         <span>{{ item.giveBtmCategory }}</span>
-        <span><-></span>
-        <span>{{ item.takeCategory }}</span>
+        <span> <-> </span>
+        <span>{{ item.takeCategory }} > </span>
         <span></span>
         <span>{{ item.takeBtmCategory }}</span>
       </p>

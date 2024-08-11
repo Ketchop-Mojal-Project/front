@@ -5,20 +5,21 @@
     class="community-feed-list"
     topic-id="all"
   >
+    <h3 style="padding-bottom: 30px">내가 참여한 글목록</h3>
+
     <h4>교환글</h4>
     <ul data-v-fbeed1e4="" class="feed-list">
       <MyPostExchangeItemComponent
         v-for="items in this.myPostStore.myJoinExchangeListAll"
-        v-bind:key="items.postIdx"
+        :key="items.postIdx"
         :item="items"
-        console.log(items.length)
       >
       </MyPostExchangeItemComponent>
       <div
         v-if="this.myPostStore.myJoinExchangeListAll.length == 0"
         class="item-none"
       >
-        작성한 글이 존재하지 않습니다
+        참여한 글이 존재하지 않습니다
       </div>
       <a
         v-if="this.myPostStore.myJoinExchangeListAll.length !== 0"
@@ -60,7 +61,6 @@ export default {
       active: false,
       share: false,
       exchange: false,
-      getexchangeList: [],
     };
   },
   computed: {

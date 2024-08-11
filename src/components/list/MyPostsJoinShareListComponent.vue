@@ -6,6 +6,7 @@
     topic-id="all"
   >
     <h3 style="padding-bottom: 30px">내가 참여한 글목록</h3>
+
     <h4>나눔글</h4>
     <ul data-v-fbeed1e4="" class="feed-list">
       <MyPostShareItemComponent
@@ -18,7 +19,7 @@
         v-if="this.myPostStore.myJoinShareListAll.length == 0"
         class="item-none"
       >
-        작성한 글이 존재하지 않습니다
+        참여한 글이 존재하지 않습니다
       </div>
       <a
         v-if="this.myPostStore.myJoinShareListAll.length !== 0"
