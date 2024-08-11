@@ -26,27 +26,23 @@
 </div>
 <div align="center">
 
-[//]: # (<img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=flat&logo=vuedotjs&logoColor=%234FC08D" />)
 
-[//]: # (	<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />)
-
-[//]: # (	<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />)
-
-[//]: # (	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />)
-
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white" />
-<img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring Security-6DB33F?style=flat&logo=Spring Security&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring data jpa-6DB33F?style=flat&logo=Spring Boot&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />
 <br>
-<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Conda-Forge&logoColor=white" />
+<img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=flat&logo=vuedotjs&logoColor=%234FC08D" />
+<img src="https://img.shields.io/badge/vueRouter-6DB33F?style=flat&logoColor=white" />
+<img src="https://img.shields.io/badge/piana-6EB98F?style=flat&logoColor=white" />
+<br>
+<img src="https://img.shields.io/badge/S3-861396?style=flat&logo=AmazonS3&logoColor=white" />
 <img src="https://img.shields.io/badge/JWT-d63aff?style=flat&logo=jsonwebtokens&logoColor=white" />
-<img src="https://img.shields.io/badge/OAuth2-151594?style=flat&logo=spring&logoColor=white" />
-<img src="https://img.shields.io/badge/WebSocket-ffea3f?style=flat&logo=socketdotio&logoColor=white" />
+<!-- <img src="https://img.shields.io/badge/OAuth2-151594?style=flat&logo=spring&logoColor=white" />
+<img src="https://img.shields.io/badge/WebSocket-ffea3f?style=flat&logo=socketdotio&logoColor=white" /> -->
 <br>
-<img src="https://img.shields.io/badge/Amazon RDS-527FFF?style=flat&logo=Amazon RDS&logoColor=white" />
+<!-- <img src="https://img.shields.io/badge/Amazon RDS-527FFF?style=flat&logo=Amazon RDS&logoColor=white" />
         <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat&logo=Amazon EC2&logoColor=white" />
-	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=MariaDB&logoColor=white" />
+	<img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=MariaDB&logoColor=white" /> -->
 
 [//]: # (	<img src="https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=flat&logo=Thymeleaf&logoColor=white" />)
 
@@ -65,7 +61,7 @@
 	<h2>🛠 Tools 🛠</h2>
 </div>
 <div align=center>
-	<img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=flat&logo=intellij-idea&logoColor=white" />
+	<img src="https://img.shields.io/badge/VSCode-000000.svg?style=flat&logo=VSCO&logoColor=white" />
 	<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white" />
 <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white" />
@@ -169,11 +165,11 @@ ketchop팀에서는 서비스의 연속성이 있고 데이터 유실이 거의 
 <a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%8B%9C%EC%8A%A4%ED%85%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90">시스템 아키텍쳐</a>
 <br><br><br>
 
-# 주요기술
-<a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8">시퀀스 다이어그램</a>
+# 🔍주요기술
+<a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%8B%9C%ED%80%80%EC%8A%A4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8">시연영상</a>
 <br><br><br>
 
-# 코드 컨벤션
+# ✔️코드 컨벤션
 <a href="https://github.com/beyond-sw-camp/be06-2nd-ketchop-mojal/wiki/%EC%BD%94%EB%93%9C%EC%BB%A8%EB%B2%A4%EC%85%98">코드 컨벤션</a>
 <br><br><br>
 
