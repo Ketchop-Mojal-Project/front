@@ -17,7 +17,7 @@
                         </router-link>
                     </li>  -->
                     <li v-for="room in chatRoomStore.chatRooms" :key="room.roomIdx">
-                        <router-link :to="{ name: '/chat-room', params: { roomIdx: room.roomIdx } }">
+                        <router-link :to="{ name: 'chat-room', params: { roomIdx: room.roomIdx } }">
                             <span><ChatElement :room="room"/></span>
                         </router-link>
                     </li> 

@@ -25,10 +25,12 @@ export const useExchangePostStore = defineStore("exchangePost", {
                 
                 // this.postIdx = postIdx;
 
-                // let url = `/proxy/exchange/read?idx=${this.postIdx}`;
-                let url = `http://localhost:8080/exchange/read?idx=${postIdx}`;
+                let url = `/proxy/exchange/read?idx=${this.postIdx}`;
+                // let url = `http://localhost:8080/exchange/read?idx=${this.postIdx}`;
                 const response = await axios.get(url);
 
+                console.log(response);
+                
                 this.exchangePost = response.data.result;
                 // console.log(response.data.result);
 

@@ -5,19 +5,23 @@
     class="community-feed-list"
     topic-id="all"
   >
+    <h3 style="padding-bottom: 30px">내가 작성한 글목록</h3>
+
     <h4>교환글</h4>
     <ul data-v-fbeed1e4="" class="feed-list">
       <MyPostExchangeItemComponent
-        v-for="items in getexchangeList"
-        v-bind:key="items.postIdx"
+        v-for="items in this.myPostStore.myExchangeListAll"
+        :key="items.postIdx"
         :item="items"
-        console.log(items.length)
       >
       </MyPostExchangeItemComponent>
-      <div v-if="getexchangeList.length == 0" class="item-none">
+      <div v-if="this.myPostStore.myExchangeListAll.length == 0" class="item-none">
         작성한 글이 존재하지 않습니다
       </div>
-      <a v-if="getexchangeList.length !== 0" href="/myPostExchange.html">
+      <a 
+        v-if="this.myPostStore.myExchangeListAll.length !== 0" 
+        href="/myPostExchange.html"
+      >
         <p style="text-align: center; cursor: pointer">
           <span>더보기 ></span>
         </p>
@@ -54,7 +58,6 @@ export default {
       active: false,
       share: false,
       exchange: false,
-      getexchangeList: [],
     };
   },
   computed: {

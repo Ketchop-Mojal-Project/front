@@ -62,6 +62,7 @@ export const useChatRoomStore = defineStore('chatRoom', {
                     console.error('채팅방 생성 중 오류 발생:', error);
                 }
             }
+            this.getChatRooms();
         },
 
         connect() { //SockJS와 STOMP를 사용하여 WebSocket 연결을 설정

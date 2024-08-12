@@ -47,7 +47,7 @@ export default {
 </script>
 <style scoped>
 .chat-message-input[data-v-c96edda4] {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     margin-bottom: 0;

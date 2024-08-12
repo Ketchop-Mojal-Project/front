@@ -7,7 +7,7 @@
             <div data-v-157a9d34="" class="info-section">
                 <div data-v-157a9d34="" class="base">
                     <div data-v-157a9d34="" class="partner-name">[{{ roomTitle }}]게시글 보러가기👉</div>
-                    <router-link :to="{ name: '/expostdetail', params: { id: this.postIdx } }">
+                    <router-link :to="{ name: 'expostdetail', params: { id: this.postIdx } }">
                         <button data-v-cbc4fb12="" data-v-157a9d34="" type="button" class="btn icon-button list-arrow btn-secondary btn-md sg-button">
                             <img data-v-157a9d34="" data-v-cbc4fb12="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBzdHJva2U9IiNlMWUxZTEiIHN0cm9rZS13aWR0aD0iMS41Ij4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTUgMTBMMCA1IDUgMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM0MS4wMDAwMDAsIC0zMTEuMDAwMDAwKSB0cmFuc2xhdGUoMTYuMDAwMDAwLCAyNzIuMDAwMDAwKSB0cmFuc2xhdGUoMzI1LjAwMDAwMCwgMzkuMDAwMDAwKSB0cmFuc2xhdGUoNy4wMDAwMDAsIDQuMDAwMDAwKSB0cmFuc2xhdGUoMi41MDAwMDAsIDUuMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC0yLjUwMDAwMCwgLTUuMDAwMDAwKSIvPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="프로필 보기">
                         </button>
@@ -147,7 +147,7 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 20.25rem;
+  max-width: 30.25rem;
   margin-left: 0.625rem;
   font-size: 1.125rem;
   line-height: 1.3125rem;

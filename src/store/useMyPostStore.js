@@ -69,6 +69,7 @@ export const useMyPostStore = defineStore("myPost", {
         // 내가 참여한 교환글 전체리스트
         async getMyJoinExchangeListAll(page, size) {
             try {
+
                 let url = `/proxy/exchange/my/list?page=${page}&size=${size}`;
                 let response = await axios.get(url, { withCredentials: true });
                 this.myJoinExchangeListAll = response.data.result;
