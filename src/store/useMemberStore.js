@@ -78,7 +78,7 @@ export const useMemberStore = defineStore('member', {
         },
         logout() {
             this.member.isLogined = false;
-            alert(this.member.isLogined);
+            alert("로그아웃이 완료되었습니다.");
         },
         async getUserCategories(){
             let url = `/proxy/my/category`;

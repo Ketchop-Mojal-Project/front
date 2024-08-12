@@ -112,10 +112,6 @@ export default {
         this.exchangePostStore.currentPage,
         this.exchangePostStore.pageSize
       );
-      console.log(this.exchangePostStore.hasMore);
-
-      console.log("와라와라ㅏㅏㅏㅏㅏexchange");
-      console.log(this.exchangePostStore.exchangeListAll);
     },
   },
 };

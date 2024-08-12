@@ -24,6 +24,15 @@
           data-v-4763e57b=""
           class="observer-container topic-chip-observer"
         >
+        <!-- 수정중 -->
+          <li
+            data-v-4763e57b=""
+            data-v-71844fb9=""
+            data-observe="topic-all"
+            class=" "
+            id="topic-all"
+            @click="selectCategory(category.idx)"> 전체
+          </li>
           <li
             v-for="category in categoryStore.categories"
             :key="category.idx"

@@ -68,7 +68,7 @@
                         <router-link
                           :to="{
                             name: 'postcreate',
-                            params: { postType: 'exchange' },
+                            params: { postType: 'share' },
                           }"
                           role="menuitem"
                           target="_self"
@@ -102,7 +102,7 @@
                           role="menuitem"
                           :to="{
                             name: 'postcreate',
-                            params: { postType: 'share' },
+                            params: { postType: 'exchange' },
                           }"
                           target="_self"
                           class="dropdown-item"

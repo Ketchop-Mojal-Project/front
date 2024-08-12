@@ -10,11 +10,11 @@ export const useShareStore = defineStore('share', {
             capacity: null,
             categoryIdx: null,
             btmCategory: "",
-            images:[]
+            images: []
         },
-        
+
     }),
-    actions:{
+    actions: {
         changePostType(type) {
             // this.postType = type;
             console.log(type);
@@ -29,17 +29,19 @@ export const useShareStore = defineStore('share', {
                 capacity: this.request.capacity,
                 categoryIdx: this.request.categoryIdx,
                 btmCategory: this.request.btmCategory,
-                images:this.request.images
+                images: this.request.images
             };
 
             try {
                 console.log(req);
-                const response = await axios.post(url, req, {withCredential:true});
+                const response = await axios.post(url, req, { withCredential: true });
                 console.log('Post created successfully:', response.data);
-                if(response.data.code===2101){
+                if (response.data.code === 2101) {
                     alert(response.data.message);
-                }else if(response.data.code===2102){
+                } else if (response.data.code === 2102) {
                     alert(response.data.message);
+                } else {
+                    alert("글 작성 완료");
                 }
             } catch (error) {
                 console.error('Error creating post:', error);

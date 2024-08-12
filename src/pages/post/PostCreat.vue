@@ -140,6 +140,7 @@ export default {
                 this.shareStore.request.title = this.title;
                 this.shareStore.request.content = this.content;
                 this.shareStore.createSharePost();
+                this.$router.push("/myposts");
             }else{
                 console.log("is exchange");
                 this.exchangeStore.request.title = this.title;

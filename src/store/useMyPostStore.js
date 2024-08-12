@@ -13,14 +13,26 @@ export const useMyPostStore = defineStore("myPost", {
             myExchangeListAll: [],
             myJoinShareListAll: [],
             myJoinExchangeListAll: [],
+
+            myShareCurrentPage: 0,   // 현재 페이지 번호
+            myShareHasMore: true,    // 더 불러올 수 있는지 여부
+
+            myJoinedShareCurrentPage: 0,   // 현재 페이지 번호
+            myJoinedSahreHasMore: true,    // 더 불러올 수 있는지 여부
+
+            myExchangeCurrentPage: 0,   // 현재 페이지 번호
+            myExchangeHasMore: true,    // 더 불러올 수 있는지 여부
+
+            myJoinedExchangeShareCurrentPage: 0,   // 현재 페이지 번호
+            myJoinedExchangeHasMore: true,    // 더 불러올 수 있는지 여부
         }
     ),
     actions: {
         // 내가 작성한 나눔글 전체리스트
         async getMyShareListAll() {
             try {
-                let url = `/proxy/share/my/list`;
-                let response = await axios.get(url, { withCredentials: true }, 5);
+                let url = `/proxy/share/my/list?page=0&size=10`;
+                let response = await axios.get(url, { withCredentials: true });
                 this.myShareListAll = response.data.result;
                 console.log("내가작성한나눔글리스트:", this.myShareListAll);
                 console.log("응답왔다");
@@ -55,9 +67,10 @@ export const useMyPostStore = defineStore("myPost", {
         },
 
         // 내가 참여한 교환글 전체리스트
-        async getMyJoinExchangeListAll() {
+        async getMyJoinExchangeListAll(page, size) {
             try {
-                let url = `/proxy/exchange/joined/list`;
+
+                let url = `/proxy/exchange/my/list?page=${page}&size=${size}`;
                 let response = await axios.get(url, { withCredentials: true });
                 this.myJoinExchangeListAll = response.data.result;
                 console.log("exchange:", this.myJoinExchangeListAll);
